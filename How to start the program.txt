@@ -1,0 +1,25 @@
+How to start the File Sync Program (main.py)(in windows):
+
+1. Open the command prompt
+2. Navigate to the directory where main.py is located using the 'cd' command
+	
+	example:
+	cd path\to\script\directory
+
+3. Execute the script using the 'python' command and provide the required command-line arguments
+   -source_path: The path to the source folder you want to synchronize.
+   -replica_path: The path to the replica folder where you want to create a copy of the source folder.
+   -sync_interval: The synchronization interval in seconds. The script will periodically synchronize the folders based on this interval.
+   -log_file: The path to the log file where synchronization and logging information will be recorded.
+	
+	example
+	python main.py /path/to/source /path/to/replica 3600 /path/to/logfile.log
+
+4. Once you run the script, it will start synchronizing the source and replica folders at the specified interval.
+   You will see log messages both in the console and in the specified log file.
+
+5. You can terminate the script at any time by pressing 'Ctrl' + 'C' in the command prompt.
+
+
+
+
